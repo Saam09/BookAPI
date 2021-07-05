@@ -1,3 +1,4 @@
+//dot env 
 require("dotenv").config();
 
 // Frame work
@@ -24,9 +25,9 @@ console.log(process.env.MONGO_URL);
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
-    useUnifiedopology: true,
+    useUnifiedTopology: true,
     useFindAndModify: false,
-    useCreateIndex: true,
+    useCreateIndex: true
   })
   .then(() => console.log("connection established!!!!!!!"));
 
